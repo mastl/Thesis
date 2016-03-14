@@ -9,7 +9,6 @@
     Sensitivity = [];
     PresentBias = 0.8:-0.1:0.4;
     for ExperimentIndex = 1:length(PresentBias)
-        ExperimentIndex
         par.Beta = PresentBias(ExperimentIndex);
         run
         InvestmentChoice = out.InvestmentChoice;
